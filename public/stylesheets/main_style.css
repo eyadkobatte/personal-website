@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis-Regular.woff') format('woff'),
+    url('/fonts/Metropolis-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Metropolis Medium';
+  src: url('/fonts/Metropolis-Medium.woff') format('woff'),
+    url('/fonts/Metropolis-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Metropolis Extra Bold';
+  src: url('/fonts/Metropolis-ExtraBold.woff') format('woff'),
+    url('/fonts/Metropolis-ExtraBold.woff2') format('woff2');
+}
+
+:root {
+  --color-primary-0: #0e97f0; /* Main Primary color */
+  --color-primary-1: #9fd9fe;
+  --color-primary-2: #71c5fb;
+  --color-primary-3: #004e81;
+  --color-primary-4: #003c63;
+  --color-complement-0: #ff8e00; /* Main Complement color */
+  --color-complement-1: #ffd29a;
+  --color-complement-2: #ffbd6a;
+  --color-complement-3: #ca7100;
+  --color-complement-4: #9b5700;
+  --color-white: #fff;
+  --color-black: #212529;
+  --color-link: #3344ee;
+}
+
+nav {
+  background: var(--color-primary-4);
+}
+
+nav * {
+  color: var(--color-white);
+}
+
+* {
+  color: var(--color-black);
+  font-family: 'Metropolis', 'Segoe UI', sans-serif;
+}
+
+.about-me-text {
+  text-align: right;
+}
+
+a:not(.nav-link):not(.navbar-brand) {
+  background-image: linear-gradient(
+    var(--color-primary-4),
+    var(--color-primary-4)
+  );
+  background-position: left 0 bottom 0;
+  background-size: 100% 0.2em;
+  background-repeat: no-repeat;
+  color: var(--color-black);
+}
+
+a:not(.nav-link):not(.navbar-brand):hover {
+  color: var(--color-link);
+}
+
+a:not(.nav-link):not(.navbar-brand):active {
+  background: var(--color-primary-4);
+  color: var(--color-white);
+}
