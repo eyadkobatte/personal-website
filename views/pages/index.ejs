@@ -3,6 +3,8 @@
   <head>
     <title>Eyad Kobatte</title>
     <% include ../partials/header.ejs %>
+
+    <link rel="stylesheet" href="stylesheets/index.css" />
   </head>
   <body>
     <div style="margin-top: 56px"></div>
@@ -13,7 +15,7 @@
         </div>
       </div>
 
-      <div class="row" id="about-me-section" style="margin-top: 4em;">
+      <div class="row" id="about-me-section" style="padding-top: 4em;">
         <div class="col">
           <div class="container">
             <div class="row">
@@ -32,32 +34,66 @@
                   check out my github too. Feel free to drop me a message any
                   time
                 </p>
-                <div class="business-card-container">
-                  <div class="front">
-                    <img
-                      class="image-in-business-card img-responsive"
-                      src="images/EK.png"
-                      alt="E K"
-                    />
-                    <div>
-                      <h2 class="header-in-business-card-front">
-                        Eyad Kobatte
-                      </h2>
-                      <h2 class="h6">Web Developer</h2>
+                <div class="business-card">
+                  <div class="business-card-container">
+                    <div class="front">
+                      <img
+                        class="image-in-business-card img-responsive"
+                        src="images/EK.png"
+                        alt="E K"
+                      />
+                      <div>
+                        <h2 class="header-in-business-card-front">
+                          Eyad Kobatte
+                        </h2>
+                        <h2 class="h6">Web Developer</h2>
+                      </div>
                     </div>
-                  </div>
-                  <div class="back">
-                    <h2 class="h6">Find me on</h2>
-                    <div class="row">
-                      <div class="col-6">
-                        <img src="images/github.svg" alt="Github Icon" /> <h2 class="h6 d-inline icon-text">Github</h2></div>
-                      <div class="col-6"><img src="images/twitter.svg" alt="Twitter Icon"> <h2 class="h6 d-inline icon-text">Twitter</h2></div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="row">
-                      <div class="col-6"><img src="images/linkedin.svg" alt="Linkedin Icon"> <h2 class="h6 d-inline icon-text">Linkedin</h2></div>
-                      <div class="col-6"><img src="images/email.svg" alt="Email Icon"> <h2 class="h6 d-inline icon-text">Email</h2></div>
+                    <div class="back">
+                      <h2 class="h6">Find me on</h2>
+                      <div class="row">
+                        <div class="col-6 find-me-business-card">
+                          <a
+                            href="https://github.com/eyadkobatte"
+                            class="business-card-link"
+                          >
+                            <img src="images/github.svg" alt="Github Icon" />
+                            <h2 class="h6 d-inline icon-text">Github</h2>
+                          </a>
+                        </div>
+                        <div class="col-6 find-me-business-card">
+                          <a
+                            href="https://twitter.com/eyadkobatte"
+                            class="business-card-link"
+                          >
+                            <img src="images/twitter.svg" alt="Twitter Icon" />
+                            <h2 class="h6 d-inline icon-text">Twitter</h2>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 find-me-business-card">
+                          <a
+                            href="https://in.linkedin.com/in/eyadkobatte"
+                            class="business-card-link"
+                          >
+                            <img
+                              src="images/linkedin.svg"
+                              alt="Linkedin Icon"
+                            />
+                            <h2 class="h6 d-inline icon-text">Linkedin</h2>
+                          </a>
+                        </div>
+                        <div class="col-6 find-me-business-card">
+                          <a
+                            href="mailto:ekobatte96@gmail.com"
+                            class="business-card-link"
+                          >
+                            <img src="images/email.svg" alt="Email Icon" />
+                            <h2 class="h6 d-inline icon-text">Email</h2>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -67,7 +103,7 @@
                   src="images/Eyad Kobatte.jpeg"
                   alt="Eyad Kobatte"
                   style="max-width: 100%;"
-                  class="img-fluid rounded mx-auto d-block"
+                  class="img-fluid rounded mt-2 d-block"
                 /> -->
               </div>
             </div>
@@ -77,7 +113,7 @@
 
       <hr />
 
-      <div class="row" id="my-work-section" style="margin-top: 4em;">
+      <div class="row" id="my-work-section" style="padding-top: 4em;">
         <div class="col">
           <div class="container">
             <div class="row">
@@ -100,6 +136,78 @@
           </div>
         </div>
       </div>
+
+      <hr />
+
+      <div class="row" id="contact-section" style="padding-top: 4em;">
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h3>Contact Me</h3>
+                <p>
+                  <form action="/contact" method="POST">
+                    <div class="form-group">
+                      <label for="name">Full Name <span class="required-field">*</span></label>
+                      <input type="text" name="name" id="name" class="form-control" required />
+                    </div>
+                  
+                    <div class="form-group">
+                      <label for="email">Email <span class="required-field">*</span></label>
+                      <input type="email" name="email" id="email" class="form-control" required />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="message">Your Message <span class="required-field">*</span></label>
+                      <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <button type="submit" class="btn button-in-contact-form">Send Message</button>
+                    </div>
+  
+                  
+                  
+                  </form>
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-6 about-me-text">
+                <img
+                  src="images/macbook.jpg"
+                  alt="About Me"
+                  style="max-width: 100%;"
+                  class="img-fluid rounded mx-auto d-block"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    
+    <% if(locals.sentContactForm) { %>
+      <div class="toast toast-contact-form" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+          <div class="toast-header">
+            <strong class="mr-auto">Successful</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Message successfully sent
+          </div>
+        </div>
+    <% } %>
+
+
+    <script>
+      $(document).ready(() => {
+        $('.toast').toast('show')
+        setTimeout(() => {
+          $('.toast').toast('hide');
+        }, 3000)
+      })
+    </script>
   </body>
 </html>

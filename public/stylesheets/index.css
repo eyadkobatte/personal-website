@@ -1,0 +1,151 @@
+.about-me-text {
+  text-align: right;
+}
+
+.business-card {
+  perspective: 3000px;
+}
+.business-card:hover .business-card-container {
+  transform: rotateY(180deg);
+}
+
+.business-card-container {
+  min-width: 100%;
+  min-height: var(--business-card-height);
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #f7f6ff,
+    #f0edfe,
+    #e8e5fe,
+    #e0dcfd,
+    #d9d8fe,
+    #d1d5fe,
+    #c9d2ff,
+    #bfd4ff,
+    #b4d6ff,
+    #a9d7ff,
+    #9fd9fe
+  );
+  border-radius: 0.25rem;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+
+.business-card-container .front {
+  backface-visibility: hidden;
+  z-index: 2;
+  transform: rotateY(0deg);
+  position: absolute;
+  min-height: var(--business-card-height);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business-card-container .front div {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.business-card-container .front div h2.h6 {
+  margin-top: 0.2em;
+}
+
+.business-card-container .back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  min-width: 100%;
+  position: absolute;
+  min-height: var(--business-card-height);
+  margin: 1em 4em 1em -4em;
+}
+
+.business-card-container:hover .front {
+  opacity: 0;
+}
+
+.business-card-container:hover .back {
+  opacity: 1;
+}
+
+.image-in-business-card {
+  max-width: 10em;
+  max-height: 200px;
+}
+
+.header-in-business-card-front {
+  display: inline;
+}
+
+.icon-text {
+  margin-right: 1em;
+  font-weight: 600;
+}
+
+a:not(.nav-link):not(.navbar-brand):not(.business-card-link) {
+  background-image: linear-gradient(
+    var(--color-primary-4),
+    var(--color-primary-4)
+  );
+  background-position: left 0 bottom 0;
+  background-size: 100% 0.2em;
+  background-repeat: no-repeat;
+  color: var(--color-black);
+}
+
+a:not(.nav-link):not(.navbar-brand):not(.business-card-link):hover {
+  color: var(--color-link);
+}
+
+a:not(.nav-link):not(.navbar-brand):not(.business-card-link):active {
+  background: var(--color-primary-4);
+  color: var(--color-white);
+}
+
+a.business-card-link {
+  color: var(--color-black);
+}
+
+a.business-card-link:hover {
+  text-decoration: none;
+  color: var(--color-primary-4);
+}
+
+.find-me-business-card {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.button-in-contact-form {
+  border: 1px solid var(--color-primary-4);
+  color: var(--color-primary-4);
+}
+
+.button-in-contact-form:hover {
+  border: 1px solid var(--color-white);
+  background: var(--color-primary-4);
+  color: var(--color-white);
+}
+
+span.required-field {
+  color: var(--color-red);
+}
+
+.toast-contact-form {
+  position: fixed;
+  top: 75vh;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  left: 50%;
+  background: var(--color-green);
+  color: var(--color-white);
+}
+.toast-contact-form .toast-header {
+  background: var(--color-dark-green);
+}
+
+.toast-contact-form * {
+  color: var(--color-white);
+}
