@@ -18,7 +18,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {}
 
-  submitContactForm() {
+  submitContactForm(event) {
+    event.preventDefault();
     const body = new HttpParams()
       .set('form-name', 'contact-form')
       .append('name', this.contactForm.value.name)

@@ -214,12 +214,14 @@
       action="/"
       class="flex flex-wrap max-w-md"
       [formGroup]="contactForm"
+      (ngSubmit)="submitContactForm($event)"
     >
       <p class="hidden">
         <label
           >Don’t fill this out if you're human: <input name="bot-field"
         /></label>
       </p>
+      <input type="hidden" name="form-name" value="contact-form" />
       <div class="w-1/2 pr-2">
         <label for="name">Your Name</label>
         <input
