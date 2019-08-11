@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+
+@tailwind components;
+
+:root {
+  --color-anchor-blue-1: #2c5282;
+  --color-anchor-blue-2: #2a4365;
+  --color-black: #1a202c;
+  --color-white: #ffffff;
+}
+
+* {
+  color: var(--color-black);
+}
+
+.anchors {
+  background-image: linear-gradient(
+    to right,
+    var(--color-anchor-blue-1),
+    var(--color-anchor-blue-2)
+  );
+  background-position: left 0 bottom 0;
+  background-size: 100% 0.2rem;
+  background-repeat: no-repeat;
+  color: var(--color-black);
+  padding: 0.2rem 0.2rem 0 0.2rem;
+}
+
+.anchors:hover {
+  background: linear-gradient(
+    to right,
+    var(--color-anchor-blue-1),
+    var(--color-anchor-blue-2)
+  );
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.anchors:active {
+  background: var(--color-anchor-blue-2);
+  color: var(--color-white);
+}
+
+@tailwind utilities;

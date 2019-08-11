@@ -1,0 +1,226 @@
+<!-- Container for photo and about me -->
+<div class="flex bg-blue-100">
+  <!-- About me wall of text -->
+  <div class="md:w-3/4 p-8">
+    <h1 class="text-3xl font-light text-blue-700">Hello World!</h1>
+    <p>
+      I am <span class="font-bold">Eyad Kobatte</span>. Full Stack Web Developer
+      based in Bangalore, India working in
+      <a class="anchors" href="https://www.meltwater.com">Meltwater</a>. I build
+      progressive web apps using the latest frameworks like
+      <a class="anchors" href="https://angular.io">Angular</a>,
+      <a class="anchors" href="https://reactjs.org/">React</a> on the front end
+      and <a class="anchors" href="https://nodejs.org/en/">Node.js</a> on the
+      backend
+    </p>
+    <p>
+      Check out this website to see some of my work. You can also check out my
+      <a class="anchors" href="https://github.com/eyadkobatte">GitHub</a> too.
+      Feel free to drop me a message any time.
+    </p>
+    <p>
+      I have a blog called
+      <a class="anchors" href="https://blog.eyadkobatte.com">DeveloPanda</a>
+      where I write interesting stuff sometimes. Check it out
+    </p>
+    <img
+      src="assets/images/EyadKobatte.jpg"
+      alt="Eyad Kobatte"
+      class="md:w1/2 mt-4 rounded md:hidden"
+    />
+  </div>
+  <!-- End About me wall of text -->
+  <!-- My Photo -->
+  <div class="hidden md:block relative w-1/4">
+    <img
+      src="assets/images/EyadKobatte.jpg"
+      alt="Eyad Kobatte"
+      class="absolute inset-0 w-full h-full object-cover object-top"
+    />
+  </div>
+  <!-- End My Photo -->
+</div>
+<!-- End Main Container -->
+
+<!-- Projects -->
+<div class="bg-blue-200 p-8">
+  <h2 class="text-2xl text-blue-700 font-light">Projects</h2>
+  <p>
+    I build complete web apps using the MEAN Stack and I love doing it. Take a
+    look at what I have done so far
+  </p>
+  <div class="flex flex-wrap mt-2">
+    <div class="w-full md:w-1/2 md:px-4 md:-ml-4 mb-4">
+      <div>
+        <h3 class="text-xl text-blue-500 font-light inline-block">
+          Track Mate
+        </h3>
+        <a href="https://github.com/eyadkobatte/track-mate-backend" class="mx-2"
+          ><img
+            title="GitHub"
+            class="inline-block w-5 h-5 mb-1 cursor-pointer"
+            src="assets/icons/github-logo.png"
+            alt="GitHub"
+        /></a>
+        <a href="https://trackmate.netlify.com" class="mx-2"
+          ><img
+            title="Website"
+            class="inline-block w-5 h-5 mb-1 -ml-2 cursor-pointer"
+            src="assets/icons/website-logo.svg"
+            alt="Website"
+        /></a>
+      </div>
+      <p>
+        A collaborative tool to build ideas and thoughts and share those ideas
+        with the people that matter. Sign up using a social media platform and
+        start collaborating with ease.
+      </p>
+      <p>
+        Users can have rooms to compartmentalize easily. Other users can be
+        added into rooms to share with only those that need to see it.
+      </p>
+      <p>
+        Track Mate is built using amazing tools like
+        <a class="anchors" href="https://angular.io/">Angular</a>,
+        <a class="anchors" href="https://nodejs.org/en/">Node.js</a>,
+        <a class="anchors" href="https://expressjs.com/">Express</a>,
+        <a class="anchors" href="https://www.mongodb.com/">MongoDB</a>,
+        <a class="anchors" href="https://firebase.google.com/">Firebase Auth</a
+        >,
+        <a class="anchors" href="https://material.angular.io/"
+          >Angular Material</a
+        >
+      </p>
+    </div>
+    <div class="w-full md:w-1/2 md:px-4 md:-mr-4 mb-4">
+      <div>
+        <h3 class="text-xl text-blue-500 font-light inline-block">
+          Music Recommender
+        </h3>
+        <a href="https://github.com/eyadkobatte/Music Recommender" class="mx-2"
+          ><img
+            title="GitHub"
+            class="inline-block w-5 h-5 mb-1 cursor-pointer"
+            src="assets/icons/github-logo.png"
+            alt="GitHub"
+        /></a>
+      </div>
+      <p>
+        A Data Science Project which involved using the million-song dataset
+        available on
+        <a class="anchors" href="https://www.kaggle.com/">Kaggle</a> and
+        building a recommender engine based on the previous listening history of
+        users. The recommender engine was built on an
+        <a
+          class="anchors"
+          href="https://en.wikipedia.org/wiki/Item-item_collaborative_filtering"
+          >item-item based collaborative filtering</a
+        >
+        to suggest new songs to the User.
+      </p>
+      <p>
+        A front-end was built so the user could log in and new music would be
+        displayed alongside the listening history.
+      </p>
+      <p>
+        This whole project was built on
+        <a class="anchors" href="https://www.python.org/">Python</a>,
+        <a class="anchors" href="https://pandas.pydata.org/">pandas</a>,
+        <a class="anchors" href="http://flask.pocoo.org/">Flask</a> and
+        <a class="anchors" href="http://www.celeryproject.org/">Celery</a>
+      </p>
+    </div>
+    <div class="w-full md:w-1/2 md:px-4 md:-ml-4 mb-4">
+      <div>
+        <h3 class="text-xl text-blue-500 font-light inline-block">
+          Color Decider
+        </h3>
+        <a href="https://github.com/eyadkobatte/color-decider" class="mx-2"
+          ><img
+            title="GitHub"
+            class="inline-block w-5 h-5 mb-1 cursor-pointer"
+            src="assets/icons/github-logo.png"
+            alt="GitHub"
+        /></a>
+      </div>
+      <p>
+        A Machine Learning Project which generated a random background color.
+        The algorithm would predict a better foreground color for the randomly
+        generated background color. This algorithm could be used in many
+        scenarios where the background color would be unknown and this algorithm
+        would predict a foreground color which is readable to the eyes of the
+        user. This algorithm was based on
+        <a
+          class="anchors"
+          href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm"
+          >K-Nearest Neighbors Algorithm</a
+        >.
+      </p>
+      <p>
+        Completely built using
+        <a class="anchors" href="https://www.python.org/">Python</a> with
+        <a class="anchors" href="https://scikit-learn.org/stable/"
+          >scikit-learn</a
+        >
+        to use the machine learning algorithm. The front end was built on
+        <a class="anchors" href="http://flask.pocoo.org/">Flask</a>.
+      </p>
+    </div>
+    <div class="w-full md:w-1/2 md:px-4 md:-mr-4 mb-4">
+      <div>
+        <h3 class="text-xl text-blue-500 font-light inline-block">
+          Personal Blog
+        </h3>
+        <a href="https://github.com/eyadkobatte/personal-blog" class="mx-2"
+          ><img
+            title="GitHub"
+            class="inline-block w-5 h-5 mb-1 cursor-pointer"
+            src="assets/icons/github-logo.png"
+            alt="GitHub"
+        /></a>
+        <a href="https://blog.eyadkobatte.com" class="mx-2"
+          ><img
+            title="Website"
+            class="inline-block w-5 h-5 mb-1 -ml-2 cursor-pointer"
+            src="assets/icons/website-logo.svg"
+            alt="Website"
+        /></a>
+      </div>
+      <p>
+        A gatsby project which holds all my blog posts. I write about something
+        new I learn which includes development, devops, web technologies, etc.
+      </p>
+      <p>
+        This is a
+        <a class="anchors" href="https://www.gatsbyjs.org/">gatsby</a> project
+        made using
+        <a class="anchors" href="https://reactjs.org/">React</a> using the
+        starter blog template.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- End Projects -->
+
+<!-- Contact me form -->
+<div class="bg-blue-100 p-8">
+  <h2 class="text-2xl text-blue-700 font-light">Contact Me</h2>
+  <div class="mt-3">
+    <form class="flex flex-wrap max-w-md">
+      <div class="w-1/2 pr-2">
+        <label for="name">Your Name</label>
+        <input type="text" class="w-full mt-1 px-4 py-2 block" />
+      </div>
+      <div class="w-1/2 pl-2">
+        <label for="name">Your Email</label>
+        <input type="email" class="w-full mt-1 px-4 py-2 block" />
+      </div>
+      <div class="flex-1 w-full mt-2">
+        <label for="name">Your Message</label>
+        <textarea class="block w-full px-4 py-2" rows="5"></textarea>
+      </div>
+      <input type="button" class="block w-full mt-4 py-2 bg-blue-500 text-white cursor-pointer" value="Send" />
+    </form>
+  </div>
+</div>
+<!-- End Contact me form -->
