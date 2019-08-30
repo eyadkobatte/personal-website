@@ -30,10 +30,8 @@ export class HomeComponent implements OnInit {
       .post('/', body.toString(), {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
       })
-      .subscribe((result) => {
-        console.log(result);
-      });
-    
+      .subscribe((result) => {});
+
     this.contactForm.reset();
   }
 }
