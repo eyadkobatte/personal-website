@@ -27,13 +27,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": ["src/favicon.ico", "src/assets", "src/_redirects", "src/robots.txt"],
-            "styles": [
-              {
-                "input": "src/styles.scss",
-                "lazy": true,
-                "bundleName": "lazy-loaded-style"
-              }
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
