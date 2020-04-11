@@ -11,8 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
