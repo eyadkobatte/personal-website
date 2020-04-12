@@ -1,9 +1,11 @@
 module.exports = {
   theme: {
-    extend: {}
+    minWidth: {
+      '80': '20rem',
+    },
   },
   variants: {
-    backgroundColor: ['responsive', 'hover', 'focus', 'active']
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
   },
-  plugins: []
-}
+  plugins: [],
+};
