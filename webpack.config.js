@@ -3,7 +3,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./src/**/*.html'],
 
   // Include any special characters you're using in this regular expression
-  defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || []
+  defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 });
 
 module.exports = {
@@ -11,18 +11,22 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-        loader: 'postcss-loader',
-        options: {
-          ident: 'postcss',
-          syntax: 'postcss-scss',
-          plugins: () => [
-            require('postcss-import'),
-            require('tailwindcss'),
-            require('autoprefixer'),
-            purgecss
-          ]
-        }
-      }
-    ]
-  }
+        use: [
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  require('postcss-import'),
+                  require('tailwindcss'),
+                  require('autoprefixer'),
+                  purgecss
+                ],
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
 };
