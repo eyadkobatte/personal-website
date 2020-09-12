@@ -5,13 +5,13 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
   contactForm = new FormGroup({
     name: new FormControl('', Validators.required),
     email: new FormControl('', Validators.required),
-    message: new FormControl('', Validators.required)
+    message: new FormControl('', Validators.required),
   });
 
   constructor(private http: HttpClient) {}
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
 
     this.http
       .post('/', body.toString(), {
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       })
       .subscribe((result) => {});
 
